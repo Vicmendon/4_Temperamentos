@@ -1,0 +1,232 @@
+Quando apresentado a uma idéia, uma pessoa ou uma situação, eu reajo rapidamente.
+Quando apresentado a uma idéia, uma pessoa ou uma situação, eu demoro a reagir.
+Quando apresentado a uma idéia, uma pessoa ou uma situação, eu reajo fortemente (intensamente).
+Quando apresentado a uma idéia, uma pessoa ou uma situação, eu não reajo intensamente.
+Quando apresentado a uma idéia, uma pessoa ou uma situação, desejo agir imediatamente.
+Quando apresentado a uma idéia, uma pessoa ou uma situação, eu permaneço calmo e espero para agir.
+Eu não reajo inicialmente, mas minha reação vai aumentando aos poucos de intensidade.
+As impressões duram muito tempo (duração da reação).
+As impressões duram pouco tempo (duração da reação).
+Acolhedor.
+Aventureiro.
+Preocupo-me excessivamente.
+Introspectivo.
+Facilmente provocado.
+Se provocado, vou retaliar.
+Sério.
+Gosto de ser bajulado.
+Inclinado a bajular.
+Cuidadoso.
+Interiorizado.
+Introvertido.
+Detalhista.
+Distraído.
+Propenso à reflexão.
+Determinado.
+Confiante.
+Inseguro.
+Aprecio o isolamento.
+Adoro estar acompanhado.
+Desfruto a companhia das pessoas.
+Incerto.
+Sociável.
+Fico irritado com a desordem.
+Abomino a injustiça.
+Justo.
+Irrito-me com facilidade.
+Empolgado.
+Extrovertido.
+Solitário.
+Cético.
+Centro das atenções.
+Vingativo.
+Exagero com facilidade.
+Líder auto-declarado.
+Líder que gosta de servir.
+Carismático.
+Invejoso.
+Ciumento.
+Feliz.
+Otimista.
+Propenso a me preocupar com doenças.
+Facilmente desencorajado.
+Cabeça-dura.
+Racional.
+Diplomático.
+Costumo deixar os segredos escaparem.
+Desconfiado.
+Calmo.
+Criativo.
+Assumo o comando.
+Paciente.
+Impaciente (tento sempre antecipar o que acontecerá em seguida).
+Amo a paz e o sossego.
+Zeloso.
+Odeio conflitos.
+Adoro debater.
+Argumentativo.
+Sentimental.
+Gosto de agradar ao público (no sentido negativo).
+Demoro a fazer amizades.
+Faço amigos com facilidade.
+Reticente.
+Lógico.
+Reflexivo.
+Amo o silêncio.
+Gosto de estar na moda.
+Gosto de festas.
+Prefiro ficar sozinho.
+Artístico.
+Poético.
+Pensador.
+Falador.
+Abomino o sentimentalismo.
+Não empático.
+Guiado por regras.
+Perseverante.
+Gosto de flertar.
+Reservado.
+Propenso a fofocar.
+"Tenho sempre a razão”.
+A aparência é importante.
+Pessoa de idéias.
+Tenho dificuldade para concluir tarefas.
+Amo a variedade.
+Afetuoso.
+Não demonstro afeto facilmente.
+Indiferente.
+Vacilante.
+Difícil de agradar.
+Sóbrio e prático.
+Temperamental.
+Controlado.
+Cauteloso.
+Brincalhão.
+Obstinado.
+Pessimista.
+Tolerante.
+Corajoso.
+Tímido.
+Costumo perdoar e esquecer.
+"Vamos esperar para ver".
+Impulsivo.
+Prefiro seguir.
+Precipitado.
+Intenso.
+Irritadiço.
+Franco.
+Impaciente.
+Profundamente estável.
+Volúvel.
+"Copo meio cheio".
+"Copo meio vazio".
+Fanfarrão.
+Sei aproveitar as oportunidades.
+Desastrado.
+Educado.
+Gosto de debater.
+Internamente pacífico.
+Bem-humorado.
+Interrompo os demais.
+Em sintonia com os sentimentos dos outros.
+Obstinado.
+Contrário.
+Destemido.
+Ambicioso.
+Alegre.
+"Bem-resolvido".
+Voltado para a ação.
+Sinto-me confortável ao fazer parte de um grupo.
+Prefiro assumir o comando de um grupo.
+Não gosto de trabalhar em grupo.
+Integro-me facilmente em grupos.
+Rápido e resoluto.
+Vigoroso.
+Cordial.
+Aprecio mudanças.
+Prefiro a rotina.
+Aberto e sociável.
+Curioso.
+Crítico.
+Foco nos problemas.
+Impulsivo.
+Metódico.
+Arrojado.
+Tomo iniciativa.
+Insisto no meu próprio plano.
+Auto-confiante.
+Auto-suficiente.
+Sensível.
+Magoo-me com facilidade.
+Tendo a ser mais superficial.
+Adapto-me bem.
+Recluso.
+Auto-consciente.
+Extremamente cauteloso (de maneira prejudicial).
+Tendo ao desânimo.
+Reservado.
+Sei guardar segredo.
+Mediador de conflitos e pessoas.
+Indeciso.
+Constante.
+Competitivo.
+Sacrificado.
+Respeitoso.
+Adaptável.
+Analítico.
+Persistente.
+Divertido.
+Rio facilmente.
+Espontâneo.
+Hesitante.
+Gosto de organizar bem meus horários.
+Sincero.
+Ordenado.
+Prestativo.
+Fiel.
+Idealista.
+Inofensivo.
+Humor seco, irônico.
+Profundo.
+Faço acontecer, sou empreendedor.
+Motivador.
+Atencioso com os outros.
+Mandão.
+Bem comportado.
+Voluntarioso.
+Perfeccionista.
+Pacificador.
+Desapaixonado.
+Controlador.
+Mantenho a calma sob pressão.
+Espiritual.
+Gosto de empolgação.
+Pensativo.
+Procrastinador.
+Dócil.
+Obstinado.
+Preciso de muito descanso.
+Exijo reconhecimento.
+Preciso de encorajamento.
+Preciso de motivação.
+Preciso de amigos.
+Focado e intenso.
+Preciso de diversão.
+Gosta de estrutura e procedimentos bem definidos.
+Preciso de inspiração para agir.
+Não gosto de confronto.
+Gosto de confronto.
+Pragmático.
+Inconstante.
+Tenho receio de circunstâncias novas.
+Bastante focado.
+Gosto de fazer compras e de comer fora.
+Habitualmente entusiasmado.
+Subjugo meus próprios desejos para agradar os outros.
+Gosto mais do caminho do que do objetivo.
+Gosto mais do objetivo do que do caminho.
+Sinto-me confortável com o momento presente.
+Inovador.
+Adoro frequentar ambientes sociais.
+Piadista.
+Caseiro
