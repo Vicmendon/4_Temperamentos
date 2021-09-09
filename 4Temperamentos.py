@@ -61,7 +61,9 @@ for x in lista_questoes:
     questoes.append(questao)
 
 
-st.markdown("<h1 style='text-align: center; color: red;'>Teste de Temperamento</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: red;'>Teste de Temperamento 2.0</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: red;'></h1>", unsafe_allow_html=True)
+
 
 for pergunta in questoes:
     with st.container():
