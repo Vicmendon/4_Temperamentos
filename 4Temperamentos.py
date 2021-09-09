@@ -112,6 +112,6 @@ if st.button('Calcular', key='btn_calcular'):
         st.text(f'MELANCÓLICO: {acertos_melancolico} ({acertos_melancolico*valor}%)')
 
 
-st.markdown("<h6 style='text-align: center; color: #26A7F3; font-family: tahoma; font-size: 15px'></h6>", unsafe_allow_html=True)
-st.markdown("<h6 style='text-align: center; color: #26A7F3; font-family: tahoma; font-size: 15px'>"
-            "- Designed by <a href='https://instagram.com/vicmendon' target='_blannk'>@Vicmendon</a> -</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: center; color: #26A7F3; font-family: tahoma; font-size: 15px'></h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: center; color: #26A7F3; font-family: tahoma; font-size: 15px'>"
+                    "- Designed by <a href='https://instagram.com/vicmendon' target='_blank'>@Vicmendon</a> -</h6>", unsafe_allow_html=True)
