@@ -48,6 +48,8 @@ def resposta(respostas):
     return acertos_fleumatico, acertos_colerico, acertos_sanguineo, acertos_melancolico
 
 
+
+
 lista_questoes = importLista('questões.txt')
 
 questoes = []
@@ -60,18 +62,21 @@ for x in lista_questoes:
     num_questao += 1
     questoes.append(questao)
 
+info = 'São **232 questões**. Selecione as que se encaixam com os seus pensamentos ou atitudes.'
 
-st.markdown("<h1 style='text-align: center; color: red;'>Teste de Temperamento 2.0</h1>", unsafe_allow_html=True)
-st.markdown("<h1 style='text-align: center; color: red;'></h1>", unsafe_allow_html=True)
+st.info(info)
 
+st.markdown("<h1 style='text-align: center; color: red;'>Teste de Temperamento</h1>", unsafe_allow_html=True)
 
+st.markdown('<hr/>', unsafe_allow_html=True)
 for pergunta in questoes:
     with st.container():
-        st.checkbox(label=f'{pergunta["questao"]}', key=pergunta["num_questao"])
+        st.checkbox(label=f'{pergunta["num_questao"]} - {pergunta["questao"]}', key=pergunta["num_questao"])
+        st.markdown('<hr/>', unsafe_allow_html=True)
 
 
 # st.checkbox(label=f'Teste de pergunta', key='pergunta1')
-if st.button('Próximo', key='btn_calcular'):
+if st.button('Calcular', key='btn_calcular'):
     respostas = []
     for x in questoes:
         variable = st.session_state[x['num_questao']]
@@ -80,16 +85,24 @@ if st.button('Próximo', key='btn_calcular'):
 
     acertos_fleumatico, acertos_colerico, acertos_sanguineo, acertos_melancolico = resposta(respostas)
 
-    st.text(f'COLÉRICO: {acertos_colerico}')
-    st.text(f'FLEUMÁTICO: {acertos_fleumatico}')
-    st.text(f'SANGUÍNEO: {acertos_sanguineo}')
-    st.text(f'MELANCÓLICO: {acertos_melancolico}')
-
     if acertos_colerico > acertos_fleumatico and acertos_colerico > acertos_sanguineo and acertos_colerico > acertos_melancolico:
         st.success('COLÉRICO!!!')
     elif acertos_fleumatico > acertos_colerico and acertos_fleumatico > acertos_sanguineo and acertos_fleumatico > acertos_melancolico:
-        st.success('COLÉRICO!!!')
-    elif acertos_colerico > acertos_fleumatico and acertos_colerico > acertos_sanguineo and acertos_colerico > acertos_melancolico:
-        st.success('COLÉRICO!!!')
-    elif acertos_colerico > acertos_fleumatico and acertos_colerico > acertos_sanguineo and acertos_colerico > acertos_melancolico:
-        st.success('COLÉRICO!!!')
+        st.success('FLEUMÁTICO!!!')
+    elif acertos_sanguineo > acertos_fleumatico and acertos_sanguineo > acertos_colerico and acertos_sanguineo > acertos_melancolico:
+        st.success('SANGUÍNEO!!!')
+    elif acertos_melancolico > acertos_fleumatico and acertos_melancolico > acertos_sanguineo and acertos_melancolico > acertos_colerico:
+        st.success('MELANCÓLICO!!!')
+    else:
+        st.success('**NÃO FOI POSSÍVEL** DETERMINAR O SEU TEMPERAMENTO :(')
+
+    soma = acertos_colerico + acertos_melancolico + acertos_sanguineo + acertos_fleumatico
+
+    valor = 100 / soma
+
+    st.write(f'SOMA: {soma} | VALOR: {valor}')
+
+    st.text(f'COLÉRICO: {acertos_colerico} ({acertos_colerico*valor}%)')
+    st.text(f'FLEUMÁTICO: {acertos_fleumatico} ({acertos_fleumatico*valor}%)')
+    st.text(f'SANGUÍNEO: {acertos_sanguineo} ({acertos_sanguineo*valor}%)')
+    st.text(f'MELANCÓLICO: {acertos_melancolico} ({acertos_melancolico*valor}%)')
