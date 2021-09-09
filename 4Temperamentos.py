@@ -100,11 +100,8 @@ if st.button('Calcular', key='btn_calcular'):
 
     valor = 100 / soma
 
-    st.markdown('<hr/>', unsafe_allow_html=True)
-
     st.text(f'COLÉRICO: {acertos_colerico} ({acertos_colerico*valor}%)')
     st.text(f'FLEUMÁTICO: {acertos_fleumatico} ({acertos_fleumatico*valor}%)')
     st.text(f'SANGUÍNEO: {acertos_sanguineo} ({acertos_sanguineo*valor}%)')
     st.text(f'MELANCÓLICO: {acertos_melancolico} ({acertos_melancolico*valor}%)')
     
-    st.markdown('<hr/>', unsafe_allow_html=True)
