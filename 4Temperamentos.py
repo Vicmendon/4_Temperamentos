@@ -64,9 +64,11 @@ for x in lista_questoes:
 
 info = 'São **232 questões**. Selecione as que se encaixam com os seus pensamentos ou atitudes.'
 
-st.info(info)
+st.set_page_config(page_icon='☑', layout='centered')
 
-st.markdown("<h1 style='text-align: center; color: red;'>Teste de Temperamento</h1>", unsafe_allow_html=True)
+st.info(info)
+# st.color_picker('s')
+st.markdown("<h1 style='text-align: center; color: #26A7F3; font-family: tahoma; font-size: 30px'>Teste de Temperamento</h1>", unsafe_allow_html=True)
 
 st.markdown('<hr/>', unsafe_allow_html=True)
 for pergunta in questoes:
@@ -85,23 +87,31 @@ if st.button('Calcular', key='btn_calcular'):
 
     acertos_fleumatico, acertos_colerico, acertos_sanguineo, acertos_melancolico = resposta(respostas)
 
-    if acertos_colerico > acertos_fleumatico and acertos_colerico > acertos_sanguineo and acertos_colerico > acertos_melancolico:
-        st.success('COLÉRICO!!!')
-    elif acertos_fleumatico > acertos_colerico and acertos_fleumatico > acertos_sanguineo and acertos_fleumatico > acertos_melancolico:
-        st.success('FLEUMÁTICO!!!')
-    elif acertos_sanguineo > acertos_fleumatico and acertos_sanguineo > acertos_colerico and acertos_sanguineo > acertos_melancolico:
-        st.success('SANGUÍNEO!!!')
-    elif acertos_melancolico > acertos_fleumatico and acertos_melancolico > acertos_sanguineo and acertos_melancolico > acertos_colerico:
-        st.success('MELANCÓLICO!!!')
-    else:
-        st.success('**NÃO FOI POSSÍVEL** DETERMINAR O SEU TEMPERAMENTO :(')
-
     soma = acertos_colerico + acertos_melancolico + acertos_sanguineo + acertos_fleumatico
 
-    valor = 100 / soma
+    if soma == 0:
+        st.error('Você deve responder as perguntas primeiro!')
+    else:
+        if acertos_colerico > acertos_fleumatico and acertos_colerico > acertos_sanguineo and acertos_colerico > acertos_melancolico:
+            st.success('**COLÉRICO!!!**')
+        elif acertos_fleumatico > acertos_colerico and acertos_fleumatico > acertos_sanguineo and acertos_fleumatico > acertos_melancolico:
+            st.success('**FLEUMÁTICO!!!**')
+        elif acertos_sanguineo > acertos_fleumatico and acertos_sanguineo > acertos_colerico and acertos_sanguineo > acertos_melancolico:
+            st.success('**SANGUÍNEO!!!** ')
+        elif acertos_melancolico > acertos_fleumatico and acertos_melancolico > acertos_sanguineo and acertos_melancolico > acertos_colerico:
+            st.success('MELANCÓLICO!!!')
+        else:
+            st.success('**NÃO FOI POSSÍVEL** DETERMINAR O SEU TEMPERAMENTO :(')
 
-    st.text(f'COLÉRICO: {acertos_colerico} ({acertos_colerico*valor}%)')
-    st.text(f'FLEUMÁTICO: {acertos_fleumatico} ({acertos_fleumatico*valor}%)')
-    st.text(f'SANGUÍNEO: {acertos_sanguineo} ({acertos_sanguineo*valor}%)')
-    st.text(f'MELANCÓLICO: {acertos_melancolico} ({acertos_melancolico*valor}%)')
-    
+
+        valor = 100 / soma
+
+        st.text(f'COLÉRICO: {acertos_colerico} ({acertos_colerico*valor}%)')
+        st.text(f'FLEUMÁTICO: {acertos_fleumatico} ({acertos_fleumatico*valor}%)')
+        st.text(f'SANGUÍNEO: {acertos_sanguineo} ({acertos_sanguineo*valor}%)')
+        st.text(f'MELANCÓLICO: {acertos_melancolico} ({acertos_melancolico*valor}%)')
+
+
+st.markdown("<h6 style='text-align: center; color: #26A7F3; font-family: tahoma; font-size: 15px'></h6>", unsafe_allow_html=True)
+st.markdown("<h6 style='text-align: center; color: #26A7F3; font-family: tahoma; font-size: 15px'>"
+            "- Designed by <a href='https://instagram.com/vicmendon' target='_blannk'>@Vicmendon</a> -</h6>", unsafe_allow_html=True)
