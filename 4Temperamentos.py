@@ -64,7 +64,7 @@ for x in lista_questoes:
 
 info = 'São **232 questões**. Selecione as que se encaixam com os seus pensamentos ou atitudes.'
 
-st.set_page_config(page_icon='☑', layout='centered')
+st.set_page_config(page_icon='☑', layout='centered', page_title='Teste dos Temperamentos 2.0')
 
 st.info(info)
 # st.color_picker('s')
